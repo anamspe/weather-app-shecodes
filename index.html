@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <script
+      src="https://kit.fontawesome.com/338d227227.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Wireframe to Code - Ana Franco</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-8">
+                  <form id="search-form">
+                    <input
+                      type="text"
+                      class="form-control form-control-sm"
+                      id="search-form-container"
+                      placeholder=" Search City"
+                      name="search"
+                      autofocus="on"
+                    />
+                    <button type="submit" class="btn btn-outline-info btn-sm">
+                      Search
+                    </button>
+                  </form>
+                </div>
+                <div class="col-4 home-icon-container" id="home">
+                  <i class="fa-solid fa-house home-icon"></i>
+                </div>
+              </div>
+              <br />
+              <h5 id="day-and-time">Friday | 15:28</h5>
+              <br />
+              <div class="row">
+                <div class="col">
+                  <i class="fa-solid fa-map-pin location-icon"></i>
+                  <span class="current-city">Vancouver, Canada</span>
+                  <h1 class="current-temp">28º</h1>
+                  <h1>
+                    <span class="temp-format">
+                      C
+                      <!-- <a href="#" id="celsius-temp"> C </a> 
+                      | <a href="#" id="fahrenheit-temp"> F </a> -->
+                    </span>
+                  </h1>
+                  <div class="main-temp-range">
+                    (<span id="min-temp">14º</span>-
+                    <span id="max-temp">29º</span>)
+                  </div>
+                  <p class="temp-description">Sunny</p>
+                </div>
+                <div class="col">
+                  <img
+                    src="images/sun.png"
+                    alt="Sun"
+                    width="175px"
+                    class="main-temp-img"
+                  />
+                  <p class="sunrise-sunset">
+                    Sunrise: 06:31 <br />
+                    Sunset: 19:51
+                  </p>
+                </div>
+                <div class="row">
+                  <div class="col next-days">
+                    Saturday <br /><img
+                      src="images/sun behind cloud.png"
+                      alt="cloudy"
+                      width="30px"
+                    />
+                    <br />
+                    <span class="temp-range">14º - 24º</span>
+                  </div>
+                  <div class="col next-days">
+                    Sunday <br />
+                    <img
+                      src="images/cloud with rain.png"
+                      alt="rain"
+                      width="30px"
+                    />
+                    <br />
+                    <span class="temp-range"> 14º - 20º</span>
+                  </div>
+                  <div class="col next-days">
+                    Monday <br />
+                    <img
+                      src="images/cloud with rain.png"
+                      alt="rain"
+                      width="30px"
+                    />
+                    <br />
+                    <span class="temp-range">13º - 23º</span>
+                  </div>
+                  <div class="col next-days">
+                    Tuesday <br />
+                    <img src="images/sun.png" alt="sun" width="30px" />
+                    <br />
+                    <span class="temp-range">11º - 26º</span>
+                  </div>
+                  <div class="col next-days">
+                    Wednesday <br />
+                    <img
+                      src="images/sun behind cloud.png"
+                      alt="cloudy"
+                      width="30px"
+                    />
+                    <br />
+                    <span class="temp-range">12º - 25º</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
